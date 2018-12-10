@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- android FileProvider 在查找外置SD卡是无法找到的, 所以要使用整个手机根目录 -->
+    <!-- 详情参考 https://www.jianshu.com/p/ac5fe346a5b7 -->
+    <root-path name="root_path" path=""/>
+</paths>

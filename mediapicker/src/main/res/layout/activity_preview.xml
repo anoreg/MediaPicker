@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.anoreg.mediapicker.view.PhotoViewPager
+        android:id="@+id/vp_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#272828" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="?colorPrimary"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:srcCompat="@drawable/public_back" />
+
+        <TextView
+            android:id="@+id/tv_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/picker_text_color_dark"
+            tools:text="1/100"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/picker_horizontal_margin"
+            android:paddingLeft="@dimen/picker_horizontal_margin"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/picker_text_color_dark"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="?colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/icon_image_un_select"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/picker_horizontal_margin"
+            android:paddingRight="@dimen/picker_horizontal_margin"
+            android:text="选择"
+            android:textColor="@color/picker_text_color_dark"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

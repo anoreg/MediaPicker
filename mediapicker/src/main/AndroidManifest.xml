@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anoreg.mediapicker" >
+
+    <application>
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="density|orientation|screenSize|navigation|keyboard|keyboardHidden|fontScale"
+            android:screenOrientation="sensorPortrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities=".fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+    </application>
+
+</manifest>

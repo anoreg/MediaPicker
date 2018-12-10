@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="picker_color_primary">@android:color/white</color>
+    <color name="picker_color_primary_dark">#ffd2d5db</color>
+    <color name="picker_color_accent">#ff5697fa</color>
+    <color name="picker_text_color_dark">#ff1f2e4a</color>
+    <color name="picker_text_color_warning">#ffff6866</color>
+
+    <color name="picker_statusBar_color_primary">@color/picker_color_primary</color>
+    <color name="picker_statusBar_color_dark">#ffd2d5db</color>
+</resources>
