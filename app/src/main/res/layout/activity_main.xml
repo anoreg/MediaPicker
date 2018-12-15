@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.anoreg.demo.MainActivity">
+
+    <Button
+        android:id="@+id/single_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single"/>
+
+    <ImageView
+        android:id="@+id/single_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/multiple_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiple"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="24dp"
-        android:scrollbars="vertical" />
+        android:layout_height="wrap_content"
+        android:padding="24dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

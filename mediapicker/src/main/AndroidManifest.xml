@@ -1,7 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.anoreg.mediapicker" >
 
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application>
+        <activity
+            android:name="com.anoreg.mediapicker.MediaSelectorActivity"
+            android:configChanges="density|orientation|screenSize|navigation|keyboard|keyboardHidden|fontScale"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.anoreg.mediapicker.PreviewActivity"
+            android:configChanges="density|orientation|screenSize|navigation|keyboard|keyboardHidden|fontScale"
+            android:screenOrientation="sensorPortrait"/>
         <activity
             android:name="com.yalantis.ucrop.UCropActivity"
             android:configChanges="density|orientation|screenSize|navigation|keyboard|keyboardHidden|fontScale"
@@ -9,7 +21,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities=".fileprovider"
+            android:authorities="${MPICKER_PKGNAME}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
