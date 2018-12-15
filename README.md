@@ -1,7 +1,7 @@
-**ScreenShot**:
+**ScreenShot**:  
 <img src="screenshots/single.png" height="400" alt="Screenshot"/> <img src="screenshots/multiple.png" height="400" alt="Screenshot"/> 
 
-**Usage**:
+**Usage**:  
 Gradle:
 	
 	defaultConfig{
@@ -28,6 +28,6 @@ Style:
     <!-- define main color -->
     <color name="colorPrimary">@android:color/background_light</color>
                     	
-**Note**:
+**Note**:  
 This lib has integrated with both single and multiple photo selection
 The multiple selection part is modified addcoding to [ImageSelector](https://github.com/donkingliang/ImageSelector)
