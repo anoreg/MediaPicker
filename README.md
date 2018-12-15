@@ -2,6 +2,11 @@
 <img src="screenshots/single.png" height="400" alt="Screenshot"/> <img src="screenshots/multiple.png" height="400" alt="Screenshot"/> 
 
 **Usage**:  
+1. No need to add activities, fileprovider, permissions to your app module manully.  
+2. Just add one line in gradle  
+3. You don't need to care about permission, onActivityResult, or other complex stuff, just add a callback and wait for result  
+4. You can define your own toolbars's maincolor by define colorPrimary  
+
 Gradle:
 	
 	defaultConfig{
